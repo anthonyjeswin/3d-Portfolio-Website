@@ -1,10 +1,11 @@
+
 import { useEffect, useRef } from 'react';
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const skills = [
-    { name: 'Cloud Security', level: 90, color: 'from-blue-500 to-cyan-500' },
+    { name: 'UI/UX Design', level: 90, color: 'from-blue-500 to-cyan-500' },
     { name: 'Web Development', level: 85, color: 'from-green-500 to-teal-500' },
     { name: 'Technical Writing', level: 88, color: 'from-purple-500 to-pink-500' },
     { name: 'Ethical Hacking', level: 82, color: 'from-red-500 to-orange-500' },
