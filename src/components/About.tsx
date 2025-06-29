@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from 'react';
 
 const About = () => {
@@ -73,19 +72,16 @@ const About = () => {
             <div className="glass-morphism p-8 rounded-2xl hover-lift">
               <h3 className="text-2xl font-semibold mb-6 text-primary">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                As a dedicated tech enthusiast and cloud security analyst, I've spent years exploring the intersection 
-                of innovation and security. My passion lies in creating secure, efficient solutions while sharing 
-                knowledge through technical writing and open-source contributions.
+                My journey as a Computer Science student has been full of learning, challenges, and growth. When I started, I was excited but also unsure of what to expect. I slowly learned how to write programs, solve problems, and think logically.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                From developing mobile games to crafting AI-powered applications, I believe in the power of technology 
-                to solve real-world problems. My work spans across web development, ethical hacking, and AI integration, 
-                always with a focus on security best practices.
+                Over the years, I explored different areas like web development, app development, and databases. I did projects, learned new tools, and even faced many errors—but each mistake helped me improve.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                When I'm not coding or analyzing security vulnerabilities, you'll find me writing about the latest 
-                tech trends, experimenting with new AI tools, or contributing to the developer community through 
-                blogs and tutorials.
+                Now, in my final year, I feel more confident. I'm working on my final year project and getting ready for job interviews. This journey has taught me not just technical skills, but also how to be patient, think clearly, and never stop learning.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                I'm excited for the next chapter, where I hope to use my knowledge to build useful things and grow even more in the tech world.
               </p>
             </div>
           </div>
