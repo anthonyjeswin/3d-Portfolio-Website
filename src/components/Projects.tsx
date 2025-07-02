@@ -14,14 +14,7 @@ const Projects = () => {
       status: 'Live',
       gradient: 'from-blue-500 to-purple-600'
     },
-    {
-      title: 'Stickman Game (Super Mario Style)',
-      description: '10-level mobile game with Super Mario-style gameplay, optimized for Android 9+ devices with integrated advertising system.',
-      technologies: ['Unity', 'C#', 'Android SDK', 'AdMob'],
-      features: ['10 Unique Levels', 'Android 9+ Support', 'Ad Integration', 'Save/Load System'],
-      status: 'Published',
-      gradient: 'from-green-500 to-teal-600'
-    },
+
     {
       title: 'Tech Trend Blog',
       description: 'SEO-optimized tech blog with AdSense integration, featuring the latest technology trends and in-depth analysis articles.',
@@ -30,14 +23,7 @@ const Projects = () => {
       status: 'Active',
       gradient: 'from-purple-500 to-pink-600'
     },
-    {
-      title: 'Ethical Hacking Toolkit',
-      description: 'Comprehensive Android-focused security toolkit for ethical hacking and penetration testing with user-friendly interface.',
-      technologies: ['Python', 'Android', 'Security Tools', 'Kali Linux'],
-      features: ['Network Analysis', 'Vulnerability Scanner', 'Android Focus', 'Educational Resources'],
-      status: 'Open Source',
-      gradient: 'from-red-500 to-orange-600'
-    },
+
     {
       title: 'AI Tools Blog (2025)',
       description: 'Curated collection and reviews of 2025\'s top AI productivity tools, helping users discover and leverage cutting-edge AI solutions.',
@@ -53,6 +39,14 @@ const Projects = () => {
       features: ['3D Animations', 'Responsive Design', 'Performance Optimized', 'SEO Ready'],
       status: 'Current',
       gradient: 'from-yellow-500 to-orange-600'
+    },
+    {
+      title: 'TODO List Website',
+      description: 'Modern, responsive TODO List website with 3D animations, smooth transitions, and optimized performance across all devices.',
+      technologies: ['React', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
+      features: ['3D Animations', 'Responsive Design', 'Performance Optimized', 'SEO Ready'],
+      status: 'Current',
+      gradient: 'from-indigo-500 to-blue-600'
     }
   ];
 
@@ -138,28 +132,17 @@ const Projects = () => {
                   </ul>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="mt-6 pt-4 border-t border-border">
-                  <div className="flex gap-3">
-                    <button className="flex-1 px-4 py-2 bg-primary text-white rounded-lg font-medium transition-all duration-300 hover:bg-primary/80 hover:scale-105">
-                      View Details
-                    </button>
-                    <button className="px-4 py-2 border border-primary text-primary rounded-lg font-medium transition-all duration-300 hover:bg-primary hover:text-white">
-                      Demo
-                    </button>
+               
+                  
                   </div>
                 </div>
-              </div>
-            </div>
+              
+            
           ))}
         </div>
 
-        {/* View More Projects */}
-        <div className="text-center mt-12 animate-on-scroll">
-          <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-            View All Projects
-          </button>
-        </div>
+        
+       
       </div>
     </section>
   );

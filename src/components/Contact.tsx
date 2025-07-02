@@ -1,7 +1,8 @@
 
 import { useState } from 'react';
 import { toast } from 'sonner';
-import { Download, Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { Download, Mail, Linkedin, Github, Instagram } from 'lucide-react';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -22,20 +24,36 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
-    // Simulate form submission
-    setTimeout(() => {
-      toast.success('Message sent successfully! I\'ll get back to you soon.');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+  
+    try {
+      const response = await fetch("https://formsubmit.co/anthonyjeswin2004@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        toast.success("Message sent successfully!");
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        toast.error("Failed to send message.");
+      }
+    } catch (error) {
+      toast.error("Something went wrong.");
+      console.error(error);
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleResumeDownload = () => {
     // Create a temporary download link
     const link = document.createElement('a');
-    link.href = '/anthony-jeswin-resume.pdf'; // This would be your actual resume file
-    link.download = 'Anthony_Jeswin_Resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1_3MykAHsBtdkH6gOWuc1fA4GJaTRnRLV/view?usp=sharing'; // This would be your actual resume file
+    link.download = 'https://drive.google.com/file/d/1_3MykAHsBtdkH6gOWuc1fA4GJaTRnRLV/view?usp=sharing';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -43,10 +61,10 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { name: 'Email', icon: Mail, href: 'mailto:anthony.jeswin@example.com', color: 'hover:text-red-500' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/in/anthonyjeswin', color: 'hover:text-blue-600' },
+    { name: 'Email', icon: Mail, href: 'mailto:anthonyjeswin2004@gmail.com', color: 'hover:text-red-500' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/anthonyjeswin/', color: 'hover:text-blue-600' },
     { name: 'GitHub', icon: Github, href: 'https://github.com/anthonyjeswin', color: 'hover:text-gray-400' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/anthonyjeswin', color: 'hover:text-blue-400' }
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/anthonyjeswin/', color: 'hover:text-blue-400' }
   ];
 
   return (
@@ -185,7 +203,7 @@ const Contact = () => {
                   <strong className="text-foreground">Response Time:</strong> Usually within 24 hours
                 </div>
                 <div>
-                  <strong className="text-foreground">Languages:</strong> English, Hindi
+                  <strong className="text-foreground">Languages:</strong> English, Tamil
                 </div>
                 <div>
                   <strong className="text-foreground">Availability:</strong> Open to new opportunities

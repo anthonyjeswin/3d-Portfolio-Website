@@ -1,16 +1,17 @@
 
 import { useEffect, useRef } from 'react';
 
-const About = () => {
+
+function About() {
   const sectionRef = useRef<HTMLElement>(null);
 
   const skills = [
-    { name: 'UI/UX Design', level: 90, color: 'from-blue-500 to-cyan-500' },
-    { name: 'Web Development', level: 85, color: 'from-green-500 to-teal-500' },
-    { name: 'Technical Writing', level: 88, color: 'from-purple-500 to-pink-500' },
-    { name: 'Ethical Hacking', level: 82, color: 'from-red-500 to-orange-500' },
-    { name: 'AI Integration', level: 80, color: 'from-indigo-500 to-blue-500' },
-    { name: 'Mobile Development', level: 75, color: 'from-yellow-500 to-orange-500' }
+    { name: 'UI/UX Design', level: 80, color: 'from-blue-500 to-cyan-500' },
+    { name: 'Web Development', level: 75, color: 'from-green-500 to-teal-500' },
+    { name: 'Technical Writing', level: 68, color: 'from-purple-500 to-pink-500' },
+    { name: 'Ethical Hacking', level: 70, color: 'from-red-500 to-orange-500' },
+    { name: 'Graphic Design', level: 75, color: 'from-indigo-500 to-blue-500' },
+    { name: 'Software Testing', level: 58, color: 'from-yellow-500 to-orange-500' }
   ];
 
   const timeline = [
@@ -21,8 +22,8 @@ const About = () => {
     },
     {
       year: '2023',
-      title: 'Cloud Security Specialist',
-      description: 'Advanced focus on cloud security analysis and vulnerability assessment'
+      title: 'Ethical Hacking',
+      description: 'Studied Ethical Hacking Techniques'
     },
     {
       year: '2022',
@@ -31,8 +32,8 @@ const About = () => {
     },
     {
       year: '2021',
-      title: 'Mobile Game Developer',
-      description: 'Developed Stickman Game with 10 levels and Android compatibility'
+      title: 'UI/UX Design',
+      description: 'Designed a Website in Adobe XD'
     }
   ];
 
@@ -62,7 +63,7 @@ const About = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-on-scroll">
-            Passionate about bridging the gap between technology and security, I specialize in cloud security analysis, 
+            Passionate about bridging the gap between technology and security, I specialize in cloud security analysis,
             web development, and creating educational content that makes complex tech concepts accessible.
           </p>
         </div>
@@ -98,7 +99,7 @@ const About = () => {
                     <span className="text-muted-foreground">{skill.level}%</span>
                   </div>
                   <div className="w-full bg-muted rounded-full h-3 overflow-hidden">
-                    <div 
+                    <div
                       className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out animate-glow`}
                       style={{ width: `${skill.level}%` }}
                     ></div>
@@ -116,11 +117,9 @@ const About = () => {
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary to-secondary rounded-full"></div>
             <div className="space-y-12">
               {timeline.map((item, index) => (
-                <div 
-                  key={item.year} 
-                  className={`flex items-center animate-on-scroll ${
-                    index % 2 === 0 ? 'justify-start' : 'justify-end'
-                  }`}
+                <div
+                  key={item.year}
+                  className={`flex items-center animate-on-scroll ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}
                   style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-8' : 'lg:pl-8'}`}>
@@ -139,6 +138,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+}
 
 export default About;

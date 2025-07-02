@@ -39,11 +39,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-foreground">Services</h4>
             <ul className="space-y-2 text-muted-foreground">
               <li>Web Development</li>
-              <li>Cloud Security Analysis</li>
+              <li>UI/UX Design</li>
               <li>Technical Writing</li>
-              <li>AI Integration</li>
+              <li>Ethical Hacking</li>
               <li>Mobile Development</li>
-              <li>Consultation</li>
+              <li>Graphic Design</li>
             </ul>
           </div>
         </div>
@@ -53,20 +53,11 @@ const Footer = () => {
             <p className="text-muted-foreground text-sm">
               © {currentYear} Anthony Jeswin. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="/privacy" className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm">
-                Privacy Policy
-              </a>
-              <a href="/terms" className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm">
-                Terms of Service
-              </a>
-              <a href="/sitemap" className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm">
-                Sitemap
-              </a>
+            
             </div>
           </div>
         </div>
-      </div>
+      
     </footer>
   );
 };
