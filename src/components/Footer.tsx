@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="text-3xl font-bold gradient-text mb-4">Anthony Jeswin</div>
             <p className="text-muted-foreground mb-4">
-              Tech Enthusiast, Blogger, and Cloud Security Analyst crafting secure digital solutions.
+              Tech Enthusiast, Web Developer, and Cloud Security Analyst crafting secure digital solutions.
             </p>
             <p className="text-sm text-muted-foreground">
               Always learning, always building.
