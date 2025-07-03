@@ -137,27 +137,8 @@ const Projects = () => {
     </div>
   );
 })}
-
-                  </div>
-                </div>
-
-                {/* Features */}
-                <div className="flex-grow">
-                  <h4 className="text-sm font-semibold text-foreground mb-2">Key Features:</h4>
-                  <ul className="text-sm text-muted-foreground space-y-1">
-                    {project.features.map((feature) => (
-                      <li key={feature} className="flex items-center">
-                        <span className="w-1 h-1 bg-primary rounded-full mr-2"></span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                  </div>
-                </div>
-              ))}
-        </div> 
-      </div>
+</div>
+   </div>          
     </section>
   );
 };
