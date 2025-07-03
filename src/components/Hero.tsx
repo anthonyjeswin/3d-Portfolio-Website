@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState('');
-  const fullText = "Hi, I'm Anthony Jeswin — Tech Enthusiast, Blogger, Cloud Security Analyst.";
+  const fullText = "Hi, I'm Anthony Jeswin — Tech Enthusiast, Web Developer, Cloud Security Analyst.";
 
   useEffect(() => {
     let index = 0;
