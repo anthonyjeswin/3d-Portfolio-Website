@@ -11,42 +11,27 @@ const Projects = () => {
       description: 'Modern chat application featuring Gmail login integration, theme toggle, and advanced AI conversations powered by Google\'s Gemini API.',
       technologies: ['React', 'Node.js', 'Gemini API', 'OAuth', 'Material-UI'],
       features: ['Gmail OAuth Integration', 'Dark/Light Theme Toggle', 'Real-time AI Chat', 'Responsive Design'],
-      status: 'Live',
-      gradient: 'from-blue-500 to-purple-600'
-    },
-
-    {
-      title: 'Tech Trend Blog',
-      description: 'SEO-optimized tech blog with AdSense integration, featuring the latest technology trends and in-depth analysis articles.',
-      technologies: ['WordPress', 'SEO', 'Google AdSense', 'Analytics'],
-      features: ['SEO Optimization', 'AdSense Ready', 'Content Management', 'Analytics Dashboard'],
-      status: 'Active',
-      gradient: 'from-purple-500 to-pink-600'
-    },
-
-    {
-      title: 'AI Tools Blog (2025)',
-      description: 'Curated collection and reviews of 2025\'s top AI productivity tools, helping users discover and leverage cutting-edge AI solutions.',
-      technologies: ['Next.js', 'Tailwind CSS', 'MDX', 'Vercel'],
-      features: ['AI Tool Reviews', 'Category Filtering', 'User Ratings', 'Regular Updates'],
-      status: 'Featured',
-      gradient: 'from-indigo-500 to-blue-600'
+      status: 'Current',
+      gradient: 'from-blue-500 to-purple-600',
+      url:
     },
     {
       title: 'Portfolio Website',
       description: 'Modern, responsive portfolio website with 3D animations, smooth transitions, and optimized performance across all devices.',
       technologies: ['React', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
       features: ['3D Animations', 'Responsive Design', 'Performance Optimized', 'SEO Ready'],
-      status: 'Current',
-      gradient: 'from-yellow-500 to-orange-600'
+      status: 'Live',
+      gradient: 'from-yellow-500 to-orange-600',
+      url:'https://anthonyjeswin.netlify.app/'
     },
     {
       title: 'TODO List Website',
       description: 'Modern, responsive TODO List website with 3D animations, smooth transitions, and optimized performance across all devices.',
       technologies: ['React', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
       features: ['3D Animations', 'Responsive Design', 'Performance Optimized', 'SEO Ready'],
-      status: 'Current',
-      gradient: 'from-indigo-500 to-blue-600'
+      status: 'Live',
+      gradient: 'from-indigo-500 to-blue-600',
+      url:'https://todomanagerbyjeswin.netlify.app/'
     }
   ];
 
@@ -131,18 +116,10 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-
-               
-                  
                   </div>
                 </div>
-              
-            
-          ))}
-        </div>
-
-        
-       
+              ))}
+        </div> 
       </div>
     </section>
   );
