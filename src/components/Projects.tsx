@@ -12,8 +12,7 @@ const Projects = () => {
       technologies: ['React', 'Node.js', 'Gemini API', 'OAuth', 'Material-UI'],
       features: ['Gmail OAuth Integration', 'Dark/Light Theme Toggle', 'Real-time AI Chat', 'Responsive Design'],
       status: 'Current',
-      gradient: 'from-blue-500 to-purple-600',
-      url:
+      gradient: 'from-blue-500 to-purple-600'
     },
     {
       title: 'Portfolio Website',
