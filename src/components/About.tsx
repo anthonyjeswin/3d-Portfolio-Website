@@ -16,9 +16,14 @@ function About() {
 
   const timeline = [
     {
+      year: '2025',
+      title: 'Portfolio Website',
+      description: 'Created Portfolio Website To Showcase My Skills'
+    },
+    {
       year: '2024',
-      title: 'AI Tools Blog Launch',
-      description: 'Created comprehensive blog featuring 2025\'s top AI productivity tools'
+      title: 'ToDo Manager',
+      description: 'Created ToDo Manager To Store ToDo Lists'
     },
     {
       year: '2023',
@@ -27,8 +32,8 @@ function About() {
     },
     {
       year: '2022',
-      title: 'Tech Content Creator',
-      description: 'Started tech trend blog with SEO optimization and AdSense integration'
+      title: 'Java',
+      description: 'Studied Java Programming Language'
     },
     {
       year: '2021',
