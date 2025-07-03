@@ -66,40 +66,78 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div 
-              key={project.title}
-              className="animate-on-scroll hover-lift cursor-pointer group"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="glass-morphism p-6 rounded-2xl h-full flex flex-col transition-all duration-300 group-hover:border-primary/50">
-                {/* Project Header */}
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className={`px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r ${project.gradient} text-white`}>
-                      {project.status}
-                    </span>
-                    <ArrowUp className="transform rotate-45 text-muted-foreground group-hover:text-primary transition-colors duration-300" size={20} />
-                  </div>
-                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
+          {projects.map((project, index) => {
+  const CardContent = (
+    <div
+      className="glass-morphism p-6 rounded-2xl h-full flex flex-col transition-all duration-300 group-hover:border-primary/50"
+    >
+      {/* Project Header */}
+      <div className="mb-4">
+        <div className="flex items-center justify-between mb-3">
+          <span
+            className={`px-3 py-1 text-xs font-semibold rounded-full bg-gradient-to-r ${project.gradient} text-white`}
+          >
+            {project.status}
+          </span>
+          <ArrowUp className="transform rotate-45 text-muted-foreground group-hover:text-primary transition-colors duration-300" size={20} />
+        </div>
+        <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+          {project.title}
+        </h3>
+        <p className="text-muted-foreground leading-relaxed">{project.description}</p>
+      </div>
 
-                {/* Technologies */}
-                <div className="mb-4">
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span 
-                        key={tech}
-                        className="px-2 py-1 text-xs bg-muted text-foreground rounded-md font-mono"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+      {/* Technologies */}
+      <div className="mb-4">
+        <div className="flex flex-wrap gap-2">
+          {project.technologies.map((tech) => (
+            <span
+              key={tech}
+              className="px-2 py-1 text-xs bg-muted text-foreground rounded-md font-mono"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Features */}
+      <div className="flex-grow">
+        <h4 className="text-sm font-semibold text-foreground mb-2">Key Features:</h4>
+        <ul className="text-sm text-muted-foreground space-y-1">
+          {project.features.map((feature) => (
+            <li key={feature} className="flex items-center">
+              <span className="w-1 h-1 bg-primary rounded-full mr-2"></span>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+
+  return project.url ? (
+    <a
+      key={project.title}
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="animate-on-scroll hover-lift cursor-pointer group block"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      {CardContent}
+    </a>
+  ) : (
+    <div
+      key={project.title}
+      className="animate-on-scroll group"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      {CardContent}
+    </div>
+  );
+})}
+
                   </div>
                 </div>
 
