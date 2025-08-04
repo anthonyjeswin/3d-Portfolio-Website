@@ -17,6 +17,16 @@ function About() {
   const timeline = [
     {
       year: '2025',
+      title: 'QR Attendance System',
+      description: 'Built a secure web app where students scan QR codes to mark attendance, verified using location, time, and device ID.'
+    },
+    {
+      year: '2025',
+      title: 'College Event Management System',
+      description: 'Developed a web platform for admins to manage college events and for students to view events filtered by department and semester.'
+    },
+    {
+      year: '2025',
       title: 'Portfolio Website',
       description: 'Created Portfolio Website To Showcase My Skills'
     },
