@@ -52,8 +52,8 @@ const Contact = () => {
   const handleResumeDownload = () => {
     // Create a temporary download link
     const link = document.createElement('a');
-    link.href = 'https://drive.google.com/file/d/1_3MykAHsBtdkH6gOWuc1fA4GJaTRnRLV/view?usp=sharing'; // This would be your actual resume file
-    link.download = 'https://drive.google.com/file/d/1_3MykAHsBtdkH6gOWuc1fA4GJaTRnRLV/view?usp=sharing';
+    link.href = 'https://drive.google.com/file/d/1fyTZKgYcE0fmY1wZWem7pogqsSJAWtFj/view?usp=sharing'; // This would be your actual resume file
+    link.download = 'https://drive.google.com/file/d/1fyTZKgYcE0fmY1wZWem7pogqsSJAWtFj/view?usp=sharing';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
