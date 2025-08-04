@@ -6,13 +6,22 @@ const Projects = () => {
   const sectionRef = useRef<HTMLElement>(null);
 
   const projects = [
+    {title: 'QR Attendance System',
+      description: 'A secure web-based attendance system where teachers generate QR codes and students scan them to mark attendance, verified using location, time, and device ID.',
+      technologies: ['React', 'Firebase', 'HTML5 QR Code API', 'Tailwind CSS'],
+      features: ['QR Code Generation', 'Geolocation Verification', 'Device Lock for Students', 'Real-time Attendance Logging'],
+      status: 'Live',
+      gradient: 'from-yellow-500 to-red-600',
+      url:'https://tracknmark.netlify.app/'
+      },
     {
-      title: 'AI Chat App with Gemini API',
-      description: 'Modern chat application featuring Gmail login integration, theme toggle, and advanced AI conversations powered by Google\'s Gemini API.',
-      technologies: ['React', 'Node.js', 'Gemini API', 'OAuth', 'Material-UI'],
-      features: ['Gmail OAuth Integration', 'Dark/Light Theme Toggle', 'Real-time AI Chat', 'Responsive Design'],
-      status: 'Current',
-      gradient: 'from-blue-500 to-purple-600'
+      title: 'College Event Management System',
+      description: 'Web application for managing and viewing college events with admin controls, department/semester filters, and Firebase backend integration.',
+      technologies: ['React', 'Firebase', 'Tailwind CSS'],
+      features: ['Admin Event Creation', 'Student Department/Semester Filter', 'Real-time Event Display', 'Responsive Design'],
+      status: 'Live',
+      gradient: 'from-green-500 to-blue-600',
+      url:'https://collegetimehub.netlify.app/'
     },
     {
       title: 'Portfolio Website',
